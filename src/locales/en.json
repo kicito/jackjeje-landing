@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "title": "Healthy Fingerlings for Your Best Yield",
+    "subtitle": "Specializing in high-quality Tilapia and Catfish fingerlings, ready for your pond. Our fingerlings are carefully selected for genetics, health, and fast growth potential.",
+    "viewBatches": "View Our Batches",
+    "getQuoteNow": "Get a Quote Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Providing comprehensive fingerling solutions for successful aquaculture operations",
+    "learnMore": "Learn More",
+    "qualityGuarantee": {
+      "title": "Quality Guarantee",
+      "description": "Premium genetics ensure healthy, fast-growing fingerlings with superior survival rates and optimal growth potential for your aquaculture operation."
+    },
+    "flexibleBatches": {
+      "title": "Flexible Batches",
+      "description": "Various batch sizes available from small-scale to commercial operations, with secure transport and delivery options nationwide."
+    },
+    "expertAdvice": {
+      "title": "Expert Advice",
+      "description": "Comprehensive consultation services including pond preparation guidance, feeding recommendations, and ongoing support for maximum yield."
+    }
+  },
+  "contact": {
+    "title": "Ready to Order Your Next Batch?",
+    "subtitle": "Get in touch with us for premium fingerlings and expert aquaculture advice",
+    "sendInquiry": "Send Inquiry",
+    "contactInformation": "Contact Information",
+    "businessHours": "Business Hours",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "contact": "Email / Phone",
+      "contactPlaceholder": "Email or phone number",
+      "message": "Message / Required Quantity",
+      "messagePlaceholder": "Tell us about your requirements, quantity needed, and any specific questions...",
+      "submitButton": "Send Inquiry",
+      "successMessage": "Thank you for your inquiry! We will contact you soon."
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Central Thailand Region"
+    },
+    "hours": {
+      "mondayFriday": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed",
+      "weekdayHours": "8:00 AM - 6:00 PM",
+      "saturdayHours": "8:00 AM - 4:00 PM"
+    }
+  },
+  "footer": {
+    "companyName": "JackJeJe",
+    "description": "Your trusted partner for premium quality fingerlings and professional aquaculture solutions. Serving fish farmers across Thailand with excellence and expertise.",
+    "copyright": "© {{year}} JackJeJe. All Rights Reserved."
+  }
+}
