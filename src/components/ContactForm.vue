@@ -163,7 +163,7 @@ const handleSubmit = () => {
 <style scoped>
 .contact-form {
   background: #f8f8f8;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -346,12 +346,95 @@ const handleSubmit = () => {
 }
 
 @media (max-width: 768px) {
-  .form-row {
-    grid-template-columns: 1fr;
+  .contact-form {
+    padding: 40px 0;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .form-wrapper {
+    border-radius: 12px;
+  }
+  
+  .left-section,
+  .right-section {
+    padding: 32px 24px;
+  }
+  
+  .section-header {
+    margin-bottom: 28px;
   }
   
   .section-title {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  
+  .contact-info {
+    gap: 20px;
+  }
+  
+  .icon-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .contact-label {
+    font-size: 12px;
+  }
+  
+  .contact-value {
+    font-size: 16px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form {
+    gap: 20px;
+  }
+  
+  .form-label {
+    font-size: 13px;
+  }
+  
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-textarea {
+    min-height: 100px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
   }
 }
 </style>

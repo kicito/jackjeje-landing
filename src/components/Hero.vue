@@ -153,24 +153,45 @@ import { images } from '../assets/images.js'
 
 @media (max-width: 768px) {
   .hero {
-    height: 500px;
+    height: 400px;
+  }
+  
+  .hero-content {
+    padding: 0 16px;
   }
   
   .hero-title {
-    font-size: 36px;
+    font-size: 28px;
+    margin: 0 0 16px;
   }
   
   .hero-description {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .image-gallery {
-    padding: 40px;
+    padding: 20px;
   }
   
   .gallery-image {
-    width: 120px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 350px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.5;
   }
 }
 </style>

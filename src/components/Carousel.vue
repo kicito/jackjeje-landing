@@ -74,12 +74,19 @@ animation: scroll 10s linear infinite;
 
 @media (max-width: 768px) {
   .carousel-item {
-    width: 180px;
-    height: 120px;
+    width: 160px;
+    height: 106px;
   }
 
   .carousel-track {
-    animation: scroll 30s linear infinite;
+    animation: scroll 25s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    width: 140px;
+    height: 93px;
   }
 }
 </style>

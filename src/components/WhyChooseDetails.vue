@@ -76,7 +76,7 @@ import { images } from '../assets/images.js'
 <style scoped>
 .why-choose-details {
   background: white;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -200,22 +200,73 @@ import { images } from '../assets/images.js'
 }
 
 @media (max-width: 768px) {
+  .why-choose-details {
+    padding: 40px 0;
+  }
+  
   .container {
-    padding: 0 24px;
+    padding: 0 16px;
   }
   
   .content-header {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
+    margin-bottom: 32px;
   }
   
   .section-title {
-    font-size: 36px;
+    font-size: 28px;
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  
+  .read-more-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .image-placeholder {
+    min-height: 200px;
   }
   
   .features-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
+  }
+  
+  .feature-card {
+    gap: 16px;
+  }
+  
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-title {
+    font-size: 16px;
   }
 }
 </style>

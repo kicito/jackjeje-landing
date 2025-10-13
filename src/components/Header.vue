@@ -16,8 +16,13 @@
         
         <div class="cta-section">
           <img :src="images.icons.phone" alt="Phone" class="phone-icon" />
-          <button class="cta-button">
+          <button class="cta-button desktop-cta">
             Get in Touch
+          </button>
+          <button class="hamburger-button mobile-menu" @click="toggleMenu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
           </button>
         </div>
       </div>
@@ -26,7 +31,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { images } from '../assets/images.js'
+
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
 </script>
 
 <style scoped>
@@ -132,6 +144,34 @@ import { images } from '../assets/images.js'
   transform: translateY(-1px);
 }
 
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: #F8F9F9;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.desktop-cta {
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 20px 40px;
@@ -148,15 +188,19 @@ import { images } from '../assets/images.js'
 
 @media (max-width: 968px) {
   .header {
-    padding: 16px 24px;
+    padding: 12px 16px;
   }
   
   .header-container {
-    padding: 12px 20px;
+    padding: 10px 16px;
   }
   
   .logo-section {
-    gap: 16px;
+    gap: 12px;
+  }
+  
+  .divider {
+    display: none;
   }
   
   .nav-menu {
@@ -164,22 +208,43 @@ import { images } from '../assets/images.js'
   }
   
   .logo-text {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .cta-section {
+    gap: 12px;
+  }
+  
+  .desktop-cta {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: flex;
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    padding: 12px 16px;
+    padding: 10px 12px;
+  }
+  
+  .header-container {
+    padding: 8px 12px;
   }
   
   .phone-icon {
     display: none;
   }
   
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 14px;
+  .hamburger-button {
+    width: 22px;
+    height: 16px;
+  }
+  
+  .logo-text {
+    font-size: 13px;
   }
 }
 </style>

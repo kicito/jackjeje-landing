@@ -29,7 +29,7 @@
 <style scoped>
 .why-choose {
 background: linear-gradient(180deg, #172459 0%, #092184 100%);    color: white;
-  padding: 80px 0;
+  padding: 60px 0 40px;
 }
 
 .container {
@@ -108,21 +108,49 @@ color: #001469;
 }
 
 @media (max-width: 768px) {
+  .why-choose {
+    padding: 40px 0 32px;
+  }
+  
   .container {
-    padding: 0 24px;
+    padding: 0 16px;
   }
   
   .content-wrapper {
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
+    margin-bottom: 40px;
   }
   
   .section-title {
-    font-size: 36px;
+    font-size: 28px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .banner {
+    padding: 24px 0;
   }
   
   .banner-text {
-    font-size: 48px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .banner-text {
+    font-size: 24px;
   }
 }
 </style>

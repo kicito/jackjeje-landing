@@ -275,38 +275,85 @@ import { images } from '../assets/images.js'
 }
 
 @media (max-width: 768px) {
+  .footer {
+    min-height: 500px;
+  }
+  
   .footer-content {
-    padding: 120px 0 32px;
+    padding: 100px 0 24px;
   }
   
   .container {
-    padding: 0 24px;
+    padding: 0 16px;
   }
   
   .footer-title {
-    font-size: 48px;
-    line-height: 48px;
-    left: 24px;
-    top: -60px;
+    font-size: 36px;
+    line-height: 36px;
+    left: 16px;
+    top: -50px;
   }
   
   .footer-glass-box {
-    padding: 32px;
+    padding: 24px;
   }
   
   .footer-left {
     min-width: auto;
     width: 100%;
+    gap: 24px;
+  }
+  
+  .tagline {
+    font-size: 14px;
+    line-height: 1.5;
   }
   
   .footer-columns {
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
+  }
+  
+  .footer-heading {
+    font-size: 20px;
+  }
+  
+  .footer-menu a {
+    font-size: 14px;
   }
   
   .contact-link {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .social-badge {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  
+  .contact-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .footer-heading {
+    font-size: 18px;
+  }
+  
+  .copyright {
+    font-size: 12px;
   }
 }
 </style>
