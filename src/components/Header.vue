@@ -246,6 +246,7 @@ const toggleMenu = () => {
   .hamburger-button {
     width: 22px;
     height: 16px;
+    
   }
   
   .logo-text {
