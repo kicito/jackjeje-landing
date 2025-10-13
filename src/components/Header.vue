@@ -159,7 +159,9 @@ const toggleMenu = () => {
 .hamburger-line {
   width: 100%;
   height: 2px;
-  background: #F8F9F9;
+  /* background: #F8F9F9; */
+    background: #17255C;
+
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -193,6 +195,7 @@ const toggleMenu = () => {
   
   .header-container {
     padding: 10px 16px;
+    background-color: white;
   }
   
   .logo-section {
@@ -210,6 +213,8 @@ const toggleMenu = () => {
   .logo-text {
     font-size: 14px;
     line-height: 1.4;
+    color: #17255C;
+
   }
   
   .cta-section {
